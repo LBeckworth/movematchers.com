@@ -31,7 +31,7 @@
 /* Info Section */
 #cta .info {
   margin-top: 100px;
-  
+
   & p {
     margin: 45px 0;
     max-width: 500px;
@@ -98,7 +98,7 @@ fieldset {
 
   & input[type="text"] {
     width: 56%;
-    border: 1px solid #e1ddda;
+    border: 1px solid $border-color;
     height: 20px;
     background: url('../images/map-marker.png') no-repeat 19px 25px;
     background-position: 7px 7px;
