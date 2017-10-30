@@ -1,0 +1,38 @@
+/**
+ * main.scss
+ * Import statements to include Sass files
+ *
+ * @base Holds boilerplate content and styles for every page
+ * @layout Styles for buttons, navigation, and similar page components
+ * @pages Styles for specific, individual pages
+ * @themes Files for project specific themes
+ * @utils Sass tools, helper files, variables, and config files
+ * @vendors Third party stuffs
+ */
+
+// Base
+@import "base/reset";
+@import "base/colors";
+@import "base/typography";
+
+// Utils
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/variables";
+
+// Components
+@import "components/buttons";
+@import "components/gallery";
+@import "components/navigation";
+
+// Layout
+@import "layout/grid";
+@import "layout/header";
+@import "layout/sidebar";
+
+// Pages
+@import "pages/index";
+
+// Themes
+
+// Vendors

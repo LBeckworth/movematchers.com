@@ -1,0 +1,17 @@
+/**
+ * main.scss
+ * Import statements to include Sass files
+ *
+ * @base Holds boilerplate content and styles for every page
+ * @layout Styles for buttons, navigation, and similar page components
+ * @pages Styles for specific, individual pages
+ * @themes Files for project specific themes
+ * @utils Sass tools, helper files, variables, and config files
+ * @vendors Third party stuffs
+ */
+p {
+  color: #434a54;
+  font-family: "Zilla Slab", serif;
+  font-size: rem(17px);
+  line-height: 1.5em;
+  margin: 20px; }

@@ -1,0 +1,19 @@
+// Font Family
+$font-family: 'Zilla Slab', serif;
+
+// Base Font for HTML
+$base-font-size: 16px;
+
+// Paragraph Styles
+$paragraph-color: $black;
+$paragraph-size: rem(17px);
+$paragraph-line-height: 1.5em;
+$paragraph-margin: 20px;
+
+p {
+  color: $paragraph-color;
+  font-family: $font-family;
+  font-size: $paragraph-size;
+  line-height: $paragraph-line-height;
+  margin: $paragraph-margin;
+}
