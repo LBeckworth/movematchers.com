@@ -10,15 +10,15 @@
  * @vendors Third party stuffs
  */
 
-// Base
-@import "base/reset";
-@import "base/colors";
-@import "base/typography";
-
 // Utils
 @import "utils/functions";
 @import "utils/mixins";
 @import "utils/variables";
+
+// Base
+@import "base/reset";
+@import "base/colors";
+@import "base/typography";
 
 // Components
 @import "components/buttons";

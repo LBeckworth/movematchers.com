@@ -5,3 +5,8 @@
 @function shade($color, $percentage) {
   @return mix(black, $color, $percentage);
 }
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}

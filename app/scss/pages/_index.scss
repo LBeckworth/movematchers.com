@@ -1,0 +1,114 @@
+/*------------------------------------------------------------------------------
+[Call to Action]
+------------------------------------------------------------------------------*/
+#cta {
+  clear: both;
+  background: url('../images/background.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 50px 50px 50px;
+}
+
+#cta h1 {
+  font-family: $font-family;
+  @include fontSize(48px);
+  font-weight: 300;
+  color: $white;
+}
+
+#cta h1 strong {
+  font-weight: 600;
+}
+
+#cta p {
+  @include fontSize(24px);
+  color: $white;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+/* Info Section */
+#cta .info {
+  margin-top: 100px;
+  
+  & p {
+    margin: 45px 0;
+    max-width: 500px;
+
+    &::after {
+      content: "";
+      display: block;
+      background: url('../images/arrow.png') no-repeat;
+      width: 202px;
+      height: 157px;
+      float: right;
+      margin-right: -200px;
+    }
+  }
+}
+
+/* Quote Form */
+form#startQuote {
+  float: right;
+  padding: 40px 10px;
+  background: $white;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+
+  & ::after {
+    content: "";
+    display: block;
+    background: url('../images/arrow.png');
+    position: absolute;
+    left: -100px;
+    top: 0;
+  }
+
+  & p {
+    color: $black;
+  }
+
+  & h2 {
+    margin-bottom: 16px;
+  }
+
+  & button {
+    margin: 40px 0 20px 0;
+  }
+}
+
+/* Input Field */
+fieldset {
+  width: 100%;
+  margin-bottom: 10px;
+
+  & :first-child {
+    margin-top: 22px;
+  }
+
+  & label {
+    display: inline-block;
+    font-family: $font-family;
+    @include fontSize(21px);
+    width: 60px;
+    text-align: left;
+  }
+
+  & input[type="text"] {
+    width: 56%;
+    border: 1px solid #e1ddda;
+    height: 20px;
+    background: url('../images/map-marker.png') no-repeat 19px 25px;
+    background-position: 7px 7px;
+    padding: 10px 10px 10px 35px;
+    position: relative;
+    font-size: 18px;
+  }
+}
+
+/* Form Footer */
+#formFooter p:last-child {
+  margin-top: 40px;
+}

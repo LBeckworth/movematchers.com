@@ -9,9 +9,249 @@
  * @utils Sass tools, helper files, variables, and config files
  * @vendors Third party stuffs
  */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 p {
   color: #434a54;
   font-family: "Zilla Slab", serif;
   font-size: rem(17px);
   line-height: 1.5em;
   margin: 20px; }
+
+a {
+  text-decoration: none;
+  color: #1d76ad; }
+
+small {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 500; }
+
+h1 {
+  font-family: "Zilla Slab", serif;
+  margin-bottom: 16px; }
+
+h2 {
+  color: #434a54;
+  font-family: "Zilla Slab", serif;
+  font-size: 31px;
+  font-size: 1.9375rem; }
+
+button.primary {
+  background: #27a596;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Zilla Slab", serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  padding: 20px 64px; }
+
+html, body {
+  height: 100%; }
+
+.container {
+  padding-top: 15px; }
+
+.row-flex,
+.row-flex > div[class*="col-"] {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 auto;
+  -ms-flex: 1 auto;
+  flex: 1 auto; }
+
+.row-flex-wrap {
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+
+.row-flex > div[class*="col-"] div {
+  width: 100%; }
+
+.flex-col {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 100%;
+  -ms-flex: 1 100%;
+  flex: 1 100%;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap; }
+
+.flex-grow {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2; }
+
+header {
+  position: fixed;
+  top: 30px;
+  left: 50px;
+  right: 50px; }
+
+a.logo {
+  width: 370px;
+  height: 70px;
+  background: url("../images/mmlogo.png");
+  text-decoration: none;
+  display: block;
+  float: left; }
+
+a.logo span {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden; }
+
+nav {
+  float: right;
+  padding-top: 20px; }
+
+nav#mainMenu a {
+  font-family: "Zilla Slab", serif;
+  font-weight: 300;
+  font-size: 22px;
+  font-size: 1.375rem;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 0 0 50px; }
+
+nav#mainMenu a.carat::after {
+  content: "";
+  display: block;
+  background: url("../images/carat.png") no-repeat;
+  width: 14px;
+  height: 8px;
+  float: right;
+  margin: 6px 0 0 14px; }
+
+/*------------------------------------------------------------------------------
+[Call to Action]
+------------------------------------------------------------------------------*/
+#cta {
+  clear: both;
+  background: url("../images/background.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 50px 50px 50px; }
+
+#cta h1 {
+  font-family: "Zilla Slab", serif;
+  font-size: 48px;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #ffffff; }
+
+#cta h1 strong {
+  font-weight: 600; }
+
+#cta p {
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0;
+  padding: 0; }
+
+/* Info Section */
+#cta .info {
+  margin-top: 100px; }
+  #cta .info p {
+    margin: 45px 0;
+    max-width: 500px; }
+    #cta .info p::after {
+      content: "";
+      display: block;
+      background: url("../images/arrow.png") no-repeat;
+      width: 202px;
+      height: 157px;
+      float: right;
+      margin-right: -200px; }
+
+/* Quote Form */
+form#startQuote {
+  float: right;
+  padding: 40px 10px;
+  background: #ffffff;
+  max-width: 500px;
+  text-align: center;
+  position: relative; }
+  form#startQuote ::after {
+    content: "";
+    display: block;
+    background: url("../images/arrow.png");
+    position: absolute;
+    left: -100px;
+    top: 0; }
+  form#startQuote p {
+    color: #434a54; }
+  form#startQuote h2 {
+    margin-bottom: 16px; }
+  form#startQuote button {
+    margin: 40px 0 20px 0; }
+
+/* Input Field */
+fieldset {
+  width: 100%;
+  margin-bottom: 10px; }
+  fieldset :first-child {
+    margin-top: 22px; }
+  fieldset label {
+    display: inline-block;
+    font-family: "Zilla Slab", serif;
+    font-size: 21px;
+    font-size: 1.3125rem;
+    width: 60px;
+    text-align: left; }
+  fieldset input[type="text"] {
+    width: 56%;
+    border: 1px solid #e1ddda;
+    height: 20px;
+    background: url("../images/map-marker.png") no-repeat 19px 25px;
+    background-position: 7px 7px;
+    padding: 10px 10px 10px 35px;
+    position: relative;
+    font-size: 18px; }
+
+/* Form Footer */
+#formFooter p:last-child {
+  margin-top: 40px; }

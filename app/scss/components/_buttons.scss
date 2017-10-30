@@ -1,0 +1,9 @@
+button.primary {
+  background: $primary-color;
+  color: $white;
+  border: none;
+  text-transform: uppercase;
+  font-family: $font-family;
+  @include fontSize(24px);
+  padding: 20px 64px;
+}

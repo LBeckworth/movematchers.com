@@ -1,0 +1,49 @@
+// Header
+header {
+  position: fixed;
+  top: 30px;
+  left: 50px;
+  right: 50px;
+}
+
+// Logo
+a.logo {
+  width: 370px;
+  height: 70px;
+  background: url('../images/mmlogo.png');
+  text-decoration: none;
+  display: block;
+  float: left;
+}
+
+a.logo span {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+// Navigation
+nav {
+  float: right;
+  padding-top: 20px;
+}
+nav#mainMenu a {
+  font-family: $font-family;
+  font-weight: 300;
+  @include fontSize(22px);
+  color: $white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 0 0 50px;
+}
+
+nav#mainMenu a.carat::after {
+  content: "";
+  display: block;
+  background: url('../images/carat.png') no-repeat;
+  width: 14px;
+  height: 8px;
+  float: right;
+  margin: 6px 0 0 14px;
+}
