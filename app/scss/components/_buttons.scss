@@ -7,3 +7,13 @@ button.primary {
   @include fontSize(24px);
   padding: 20px 64px;
 }
+
+.btn.secondary {
+  display: inline-block;
+  background: $secondary-color;
+  color: $white;
+  text-transform: uppercase;
+  @include fontSize(24px);
+  padding: 20px 64px;
+  margin: 50px 0 10px 0;
+}
