@@ -6,12 +6,28 @@ footer {
     margin: 0;
     padding: 0;
   }
+
+  & a {
+    @include fontSize(16px);
+    display: block;
+    color: $white;
+    font-weight: 300;
+    margin: 15px 0;
+  }
 }
 
-.lightGray {
-  background: #434a54;
+.light {
+  background: $light-gray;
+  padding: 0 50px;
 }
 
-.darkGray {
-  background: #393f48;
+.dark {
+  background: $dark-gray;
+}
+
+.copyright {
+  color: $lighter-gray;
+  font-weight: 300;
+  text-align: left;
+  margin: 70px 0 40px;
 }

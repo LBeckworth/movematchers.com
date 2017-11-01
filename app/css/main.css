@@ -87,6 +87,14 @@ h3 {
   font-size: 32px;
   font-size: 2rem; }
 
+h4 {
+  color: #adb6c2;
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  font-size: 19px;
+  font-size: 1.1875rem;
+  margin: 52px 0 22px; }
+
 span.title {
   font-weight: 600;
   font-size: 22px;
@@ -218,12 +226,26 @@ footer {
   footer div {
     margin: 0;
     padding: 0; }
+  footer a {
+    font-size: 16px;
+    font-size: 1rem;
+    display: block;
+    color: #ffffff;
+    font-weight: 300;
+    margin: 15px 0; }
 
-.lightGray {
-  background: #434a54; }
+.light {
+  background: #434a54;
+  padding: 0 50px; }
 
-.darkGray {
+.dark {
   background: #393f48; }
+
+.copyright {
+  color: #adb6c2;
+  font-weight: 300;
+  text-align: left;
+  margin: 70px 0 40px; }
 
 section.content {
   padding: 90px 100px 45px; }

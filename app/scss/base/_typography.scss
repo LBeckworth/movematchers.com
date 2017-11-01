@@ -59,6 +59,14 @@ h3 {
   @include fontSize(32px);
 }
 
+h4 {
+  color: $lighter-gray;
+  font-family: $font-family;
+  font-weight: 500;
+  @include fontSize(19px);
+  margin: 52px 0 22px;
+}
+
 span.title {
   font-weight: 600;
   @include fontSize(22px);
