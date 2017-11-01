@@ -107,11 +107,14 @@ button.primary {
 .card {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  margin: 0 5px;
-  padding: 20px 5px;
-  min-height: 400px;
+  margin: 0 auto;
+  padding: 20px 12px;
+  min-height: 405px;
+  max-width: 375px;
   font-size: 16px;
   font-size: 1rem; }
+  .card .center {
+    text-align: center; }
 
 html, body {
   height: 100%; }
@@ -154,9 +157,10 @@ html, body {
 
 header {
   position: absolute;
-  top: 30px;
-  left: 50px;
-  right: 50px; }
+  top: 50px;
+  left: 0;
+  right: 0;
+  padding: 0 70px; }
 
 a.logo {
   width: 370px;
@@ -195,33 +199,77 @@ nav#mainMenu a.carat::after {
   float: right;
   margin: 6px 0 0 14px; }
 
+footer {
+  margin: 0;
+  padding: 0; }
+  footer div {
+    margin: 0;
+    padding: 0; }
+
+.lightGray {
+  background: #434a54; }
+
+.darkGray {
+  background: #393f48; }
+
 section.content {
-  padding: 60px 100px; }
+  padding: 90px 100px 45px; }
   section.content h2, section.content h3 {
     text-align: center;
     margin-bottom: 50px; }
+  section.content h2 {
+    font-weight: 300; }
   section.content p {
     font-size: 16px;
     font-size: 1rem; }
+
+section.gray {
+  background: #f5f5f5; }
 
 section#howItWorks {
   text-align: center; }
   section#howItWorks img {
     margin-bottom: 10px; }
+  section#howItWorks p {
+    margin-top: 0; }
 
-section#faq {
-  background: #f5f5f5; }
-  section#faq .faq {
+section#faq .faq {
+  text-align: center;
+  font-size: 22px;
+  font-size: 1.375rem;
+  margin-top: 50px; }
+
+section#faq p {
+  font-weight: 300; }
+  section#faq p strong {
     font-weight: 500;
-    text-align: center;
-    font-size: 22px;
-    font-size: 1.375rem;
-    margin-top: 50px; }
-  section#faq img {
-    display: block;
-    margin: 10px auto; }
-  section#faq .title {
-    text-align: center; }
+    display: inline-block;
+    margin-bottom: 10px; }
+
+section#faq img {
+  display: block;
+  margin: 10px auto; }
+
+section#faq .title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 28px;
+  font-size: 1.75rem; }
+
+section#resources .card.right {
+  float: right;
+  margin-right: 3%; }
+
+section#resources .card.left {
+  float: left;
+  margin-left: 3%; }
+
+section#resources p {
+  font-weight: 300; }
+
+section#resources a {
+  text-transform: uppercase;
+  font-weight: 500; }
 
 /*------------------------------------------------------------------------------
 [Call to Action]
@@ -231,7 +279,7 @@ section#faq {
   background: url("../images/background.png") no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 150px 50px 50px 50px; }
+  padding: 150px 50px 55px 50px; }
 
 #cta h1 {
   font-family: "Zilla Slab", serif;
@@ -241,7 +289,8 @@ section#faq {
   color: #ffffff; }
 
 #cta h1 strong {
-  font-weight: 600; }
+  font-weight: 600;
+  line-height: 54px; }
 
 #cta p {
   font-size: 24px;
@@ -253,7 +302,7 @@ section#faq {
 
 /* Info Section */
 #cta .info {
-  margin-top: 100px; }
+  margin-top: 125px; }
   #cta .info p {
     margin: 45px 0;
     max-width: 500px; }
@@ -264,23 +313,18 @@ section#faq {
       width: 202px;
       height: 157px;
       float: right;
-      margin-right: -200px; }
+      margin-right: -200px;
+      margin-top: 15px; }
 
 /* Quote Form */
 form#startQuote {
   float: right;
+  margin-top: 25px;
   padding: 40px 10px;
   background: #ffffff;
   max-width: 500px;
   text-align: center;
   position: relative; }
-  form#startQuote ::after {
-    content: "";
-    display: block;
-    background: url("../images/arrow.png");
-    position: absolute;
-    left: -100px;
-    top: 0; }
   form#startQuote p {
     color: #434a54; }
   form#startQuote h2 {
@@ -293,7 +337,7 @@ fieldset {
   width: 100%;
   margin-bottom: 10px; }
   fieldset :first-child {
-    margin-top: 22px; }
+    margin-top: 30px; }
   fieldset label {
     display: inline-block;
     font-family: "Zilla Slab", serif;
@@ -304,10 +348,10 @@ fieldset {
   fieldset input[type="text"] {
     width: 56%;
     border: 1px solid #e1ddda;
-    height: 20px;
+    height: 28px;
     background: url("../images/map-marker.png") no-repeat 19px 25px;
-    background-position: 7px 7px;
-    padding: 10px 10px 10px 35px;
+    background-position: 12px 12px;
+    padding: 10px 10px 10px 40px;
     position: relative;
     font-size: 18px; }
 

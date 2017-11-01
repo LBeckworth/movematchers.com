@@ -1,8 +1,14 @@
 .card {
   background: $white;
   border: 1px solid $card-border-color;
-  margin: 0 5px;
-  padding: 20px 5px;
-  min-height: 400px;
+  margin: 0 auto;
+  padding: 20px 12px;
+  min-height: 405px;
+  max-width: 375px;
+
+  & .center {
+    text-align: center;
+  }
+
   @include fontSize(16px);
 }

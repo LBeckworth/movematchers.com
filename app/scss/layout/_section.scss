@@ -1,12 +1,19 @@
 section.content {
-  padding: 60px 100px;
+  padding: 90px 100px 45px;
   & h2, h3 {
     text-align: center;
     margin-bottom: 50px;
   }
+  & h2 {
+    font-weight: 300;
+  }
   & p {
     @include fontSize(16px);
   }
+}
+
+section.gray {
+  background: $gray;
 }
 
 section#howItWorks {
@@ -15,16 +22,27 @@ section#howItWorks {
   & img {
     margin-bottom: 10px;
   }
+
+  & p {
+    margin-top: 0;
+  }
 }
 
 section#faq {
-  background: $gray;
-
   & .faq {
-    font-weight: 500;
     text-align: center;
     @include fontSize(22px);
     margin-top: 50px;
+  }
+
+  & p {
+    font-weight: 300;
+
+    strong {
+      font-weight: 500;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
   }
 
   & img {
@@ -34,5 +52,28 @@ section#faq {
 
   & .title {
     text-align: center;
+    font-weight: 500;
+    @include fontSize(28px);
+  }
+}
+
+section#resources {
+  & .card.right {
+    float: right;
+    margin-right: 3%;
+  }
+
+  & .card.left {
+    float: left;
+    margin-left: 3%;
+  }
+
+  & p {
+    font-weight: 300;
+  }
+
+  & a {
+    text-transform: uppercase;
+    font-weight: 500;
   }
 }
